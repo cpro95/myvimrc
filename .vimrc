@@ -19,7 +19,7 @@ set smarttab
 set smartindent
 set cursorline
 hi CursorLine cterm=NONE ctermbg=white ctermfg=darkblue
-
+colorscheme torte
 execute pathogen#infect()
 	syntax on
 filetype plugin indent on
@@ -29,4 +29,14 @@ nmap <C-H> <C-W>h
 nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
 nmap <C-L> <C-W>l
+
+" ESC키를 누르면 한글 모드가 해제 "
+" 입력모드에서 이전 언어 설정 모드 유지 "
+inoremap <ESC> <ESC>:set imdisable<CR>
+nnoremap i :set noimd<CR>i
+nnoremap I :set noimd<CR>I
+nnoremap a :set noimd<CR>a
+nnoremap A :set noimd<CR>A
+nnoremap o :set noimd<CR>o
+nnoremap O :set noimd<CR>O
 
