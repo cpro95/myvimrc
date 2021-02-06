@@ -31,6 +31,12 @@ nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
 nmap <C-L> <C-W>l
 
+" NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 " ESC키를 누르면 한글 모드가 해제 "
 " 입력모드에서 이전 언어 설정 모드 유지 "
 inoremap <ESC> <ESC>:set imdisable<CR>
