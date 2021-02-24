@@ -21,7 +21,7 @@ set smartindent
 set cursorline
 hi CursorLine cterm=NONE ctermbg=white ctermfg=darkblue
 colorscheme torte
-execute pathogen#infect()
+call pathogen#infect()
 	syntax on
 filetype plugin indent on
 
